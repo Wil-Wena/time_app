@@ -38,13 +38,20 @@ class _LoadingState extends State<Loading> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.lightBlue[900],
-        body: Center(
-          child: SpinKitRotatingCircle(
-            color: Colors.lightBlue,
-            size: 23,
-          ),
-        ));
+    return Stack(children: [
+      Container(
+        height: double.infinity,
+        child: Image(
+          image: AssetImage('assets/orsrc44213.jpg'),
+          fit: BoxFit.cover,
+        ),
+      ),
+      Center(
+        child: SpinKitRotatingCircle(
+          color: Colors.lightBlue,
+          size: 23,
+        ),
+      )
+    ]);
   }
 }

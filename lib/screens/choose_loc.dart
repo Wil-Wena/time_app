@@ -59,6 +59,7 @@ class _Choose_locationState extends State<Choose_location> {
                 },
                 title: Text(locations[index].location),
                 leading: CircleAvatar(
+                  backgroundColor: Colors.transparent,
                   backgroundImage:
                       AssetImage('assets/${locations[index].flag}'),
                 ),
